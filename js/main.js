@@ -93,11 +93,11 @@ function mudarUrlTrufa(){
 
 function mudarUrlOvo(){
     let img2 = document.getElementById('ovoImg')
-    if(img2.src == "http://127.0.0.1:5500/img/ovos1.png" || img2.src == "./img/ovos1.png" || img2.src == "https://gusthavosoares.github.io/The-Doces/img/ovo1.png"){
+    if(img2.src == "http://127.0.0.1:5500/img/ovos1.png" || img2.src == "./img/ovos1.png" || img2.src == "https://gusthavosoares.github.io/The-Doces/img/ovos1.png"){
         img2.setAttribute('src','./img/ovos2.png')
-    }else if(img2.src == "http://127.0.0.1:5500/img/ovos2.png" || img2.src == "./img/ovos2.png" || img2.src ==  "https://gusthavosoares.github.io/The-Doces/img/ovo2.png"){
+    }else if(img2.src == "http://127.0.0.1:5500/img/ovos2.png" || img2.src == "./img/ovos2.png" || img2.src ==  "https://gusthavosoares.github.io/The-Doces/img/ovos2.png"){
         img2.setAttribute('src','./img/ovos3.png')
-    }else if(img2.src == "http://127.0.0.1:5500/img/ovos3.png" || img2.src == "./img/ovos3.png" ||  img2.src == "https://gusthavosoares.github.io/The-Doces/img/ovo3.png"){
+    }else if(img2.src == "http://127.0.0.1:5500/img/ovos3.png" || img2.src == "./img/ovos3.png" ||  img2.src == "https://gusthavosoares.github.io/The-Doces/img/ovos3.png"){
         img2.setAttribute('src','./img/ovos1.png')
     }
 }
