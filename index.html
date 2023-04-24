@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="author" content="Ana Luisa">
     <meta name="keywords" content="doces, trufas, cones, chocolate, entregas, the_doces">
     <meta name="description" content="Venha logo experimentar os melhores doces de Porto Alegre!">
@@ -19,6 +19,7 @@
 </head>
 <body>
     <header id="menu">
+        <div class="center">
         <div class="logo">
             <a href="">The Doces</a>
         </div><!--logo-->
@@ -38,36 +39,114 @@
             </ul>
         </nav><!--menu-mobile-->
 
-        
+    </div><!--center-->
     </header>
     
-    <section class="galery">
-        <div class="galery-text">
-            <h1>Venha experimentar alguns de nossos doces!</h1>
-        </div><!--galery-text-->
-        <div class="btn left" id="left"><</div>
-        <div class="btn right"id="right">></div>
-        <div class="img-galery"
-        id="container">
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        <div class="img-item"></div>
-        </div><!--img-galery-->
+    <section class="gallery">
+    <div class="center">
+        <h1>Venha provar alguns de nossos doces!</h1>
+        <div class = "gallery-img">
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="img-wrap">
+                <div class="img-item"></div>
+            </div><!--img-wrap-->
+            <div class="clear"></div>
+        <div class ="buttons">
+            <span class="left" id="left"><</span>
+            <span class = "right" id="right">></span>
+        </div><!--buttons-->
+        <div class="clear"></div>
+        </div><!--gallery-img-->
+       
     </section><!--galery-->
-
+    
+   <section class="cardapio">
+   
+    <div class="center">
+        <h1>Cardápio</h1>
+        <div class="box-cardapio">
+        <div class="w33" id="cone-box">
+            <h2 id="coneText">Cones</h2>
+            <div class="cardapio-wrap" id="wrap">
+            <img src="./img/cone.png" title="Cones" alt="Cones" id="coneImg"></img>
+           <h3 class ="infoTitle" id ="info-title-cone">Sabores</h3>
+           <p  class="info" id = "info-text-cone">Maracujá | Prestígio | Morango | Brigadeiro</p>
+            <div class="btn-switch">
+                <i class="fa-solid fa-arrow-left" id="1"></i>
+                <i class="fa-solid fa-circle-notch" id="rotate-cone"></i>
+                <i class="fa-solid fa-arrow-right" id="2"></i>
+                <div class="clear"></div>
+               </div><!--btn-switch-->
+            </div><!--cardapio-wrap-->
+            <ul id="conePrice">
+                <li>R$10</li>
+            </ul>
+            <a href="cone.html" id="coneLink">Saiba mais!</a>
+            </div><!--w33-->
+            <div class="w33" id="trufa-box">
+                <h2 id="trufaText">Trufas</h2>
+                <div class="cardapio-wrap">
+                <img src="./img/trufa1.png" title="Trufas" alt="Trufas" id="trufaImg"></img>
+                <h3 class ="infoTitle" id ="info-title-trufa">Sabores</h3>
+                <p  class="info" id = "info-text-trufa">Maracujá | Prestígio | Morango | Brigadeiro</p>
+                <div class="btn-switch">
+                    <i class="fa-solid fa-arrow-left" id="3"></i>
+                    <i class="fa-solid fa-circle-notch" id="rotate-trufa"></i>
+                    <i class="fa-solid fa-arrow-right" id="4"></i>
+                    <div class="clear"></div>
+                   </div><!--btn-switch-->
+                </div><!--cardapio-wrap-->
+                <ul id="trufaPrice">
+                    <li>R$30</li>
+                </ul>
+                <a href="trufa.html" id="trufaLink">Saiba mais!</a>
+                </div><!--w33-->
+                <div class="w33" id="ovo-box">
+                    <h2 id="ovoText">Ovos</h2>
+                    <div class="cardapio-wrap">
+                    <img src="./img/ovos1.png" title="Ovos" alt="Ovos" id="ovoImg"></img>
+                    <h3 class ="infoTitle" id ="info-title-ovo">Sabores</h3>
+                <p  class="info" id = "info-text-ovo">Maracujá | Prestígio | Morango | Brigadeiro</p>
+                   <div class="btn-switch">
+                    <i class="fa-solid fa-arrow-left" id="5"></i>
+                    <i class="fa-solid fa-circle-notch" id="rotate-egg"></i>
+                    <i class="fa-solid fa-arrow-right" id="6"></i>
+                    <div class="clear"></div>
+                   </div><!--btn-switch-->
+                   
+                    </div><!--cardapio-wrap-->
+                    <ul id="ovoPrice">
+                        <li>R$60</li>
+                    </ul>
+                    <a href="ovos.html" id="ovoLink">Saiba mais!</a>
+                    </div><!--w33-->
+        </div><!--box-cardapio-->
+        </div><!--cardapio-img-->
+    </div><!--center-->
+   </section><!--cardapio-->
 
 
 
