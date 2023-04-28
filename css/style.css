@@ -20,6 +20,10 @@
     font-family:'Rubik';
 }
 
+html,body{
+    height:100%;
+}
+
 ::-webkit-scrollbar{
     display:none;
 }
@@ -469,6 +473,131 @@ input[type=submit]:hover{
     font-size:20px;
 }
 /*---------*/
+
+/*Página de Cardápio*/
+
+.parallaxImg{
+    width:100%;
+    height:200px;
+    background-image:url("../img/doce.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.shadow{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.parallaxImg > h4{
+    position:absolute;
+    top:50%;
+    left:44%;
+    transform:tranlate(-50%,-50%);
+    font-size:1.6rem;
+    color:rgb(231, 219, 219);
+    text-transform:uppercase;
+}
+
+.grid-box{
+    width:100%;
+    display:grid;
+    gap:10px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;    
+    padding: 20px 2%;
+    background:var(--white);
+}
+
+.flex-cont{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:5px;
+    border:0;
+    background:rgb(241, 238, 238);
+    border-radius:10px;
+    border:1px solid black;
+}
+
+.flex-cont > summary{
+    font-size:20px;
+    text-transform:uppercase;
+    text-align:center;
+    margin:2px;
+    color:#666061;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.img-cart{
+    
+    background-size:cover;
+    background-position:center;
+  padding:20%;
+  border-radius:20px;
+}
+.flex-cont > form{
+    padding:10px;
+    text-align:center;
+}
+
+.flex-cont > form > label{
+    font-size:14px;
+    color:rgb(77,77,77);
+    margin-right:5%;
+    font-style:italic;
+}
+.flex-cont > form > input[type=radio]{
+   accent-color:rgb(184, 26, 86);
+}
+
+.flex-cont > form > .btn-box> input[type=submit]{
+    width:100%;
+    background-color:rgb(61, 212, 61);
+    
+}
+
+.btn-box{
+    position:relative;
+    margin-top:6px;
+}
+
+.flex-cont > form > .btn-box> i{
+    color:white;
+    position:absolute;
+    top:20%;
+    left:45%;
+    cursor:pointer;
+}
+
+
+.flex-cont > form > .btn-box > i:hover {
+    color:black;
+    transition:1s;
+}
+
+.flex-cont > form > .btn-box > i:hover +  input[type=submit]{
+    background-color:rgb(37, 185, 37);
+    transition:1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1024px){
     .gallery-img{
         justify-content:center;
@@ -493,12 +622,25 @@ input[type=submit]:hover{
         margin-top:10px;
     }
     
-    
+    .flex-cont{
+        display:block;
+    }
+    .flex-cont> form{
+        text-align:center;
+    }
+    .flex-cont > form > input[type=radio]{
+        width:100%;
+    }
+
+    .flex-cont > form > label{
+        width:100%;
+    }
+
 }
 
 
 
-@media screen and (max-width:780px){
+@media screen and (max-width:825px){
     .menu-desktop{
         display:none;
     }
@@ -563,23 +705,54 @@ input[type=submit]:hover{
     }
 
     .footerMedia{
-        display:inline-block;
+        display:flex;
+        flex-wrap:wrap;
         width:100%; 
-        text-align:center;
+        justify-content:flex-end;
+
     }
     .footerMedia > .social-item {
-        display:inline-block;
+        width:40%;
         margin:10px;
     }
 
+    .social-item > span {
+        font-size:12px;
+    }
     
 
-    
+    .parallaxImg > h4{
+        position:absolute;
+        top:50%;
+        left:40%;
+        transform:tranlate(-50%,-50%);
+        font-size:1.6rem;
+        color:rgb(231, 219, 219);
+        text-transform:uppercase;
+    }
     
 }
 
 
-.social-item > span{
-    display:block;
-}
 
+@media screen and (max-width:350px){
+    .footerMedia{
+        text-align:center;
+        
+
+    }
+    .footerMedia > .social-item {
+        width:100%;
+    }
+    .flex-cont> form{
+        text-align:left;
+        display:block;
+    }
+    .flex-cont > form > input[type=radio]{
+    }
+
+    .flex-cont > form > label{
+        margin:0;
+    }
+    
+}
