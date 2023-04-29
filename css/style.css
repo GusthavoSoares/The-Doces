@@ -541,14 +541,14 @@ input[type=submit]:hover{
   padding:20%;
   border-radius:20px;
 }
-.imgOne{
-    background-image:url('./img/trufa1.png');
+.img-cart.imgOne{
+    background-image:url('../img/trufa1.png');
 }
 .imgTwo{
-    background-image:url('./img/ovos1.png')
+    background-image:url('../img/ovos1.png')
 }
 .imgThree{
-    background-image:url('./img/cone.png');
+    background-image:url('../img/cone.png');
 }
 .flex-cont > form{
     padding:10px;
