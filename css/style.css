@@ -510,6 +510,7 @@ input[type=submit]:hover{
     grid-template-rows:1fr;    
     padding: 20px 2%;
     background:var(--white);
+    position:relative;
 }
 
 .flex-cont{
@@ -585,7 +586,26 @@ input[type=submit]:hover{
     transition:1s;
 }
 
-
+.lt{
+    position:absolute;
+    font-size:20px;
+    top:50%;
+    left:0.3%;
+    color:#f14564;
+    background-color:rgb(238, 238, 238);
+    padding:5px;
+    border-radius:20px;
+}
+.rg{
+    position:absolute;
+    font-size:20px;
+    right:0.3%;
+    top:50%;
+    color:#f14564;
+    background-color:rgb(238, 238, 238);
+    padding:5px;
+    border-radius:20px;
+}
 
 
 
@@ -622,20 +642,14 @@ input[type=submit]:hover{
         margin-top:10px;
     }
     
-    .flex-cont{
-        display:block;
+    .grid-box{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;    
     }
-    .flex-cont> form{
-        text-align:center;
+    .flex-cont > form > .btn-box> i{
+        top:20%;
+        left:48%;
     }
-    .flex-cont > form > input[type=radio]{
-        width:100%;
-    }
-
-    .flex-cont > form > label{
-        width:100%;
-    }
-
 }
 
 
@@ -724,18 +738,22 @@ input[type=submit]:hover{
     .parallaxImg > h4{
         position:absolute;
         top:50%;
-        left:40%;
+        left:41.5%;
         transform:tranlate(-50%,-50%);
         font-size:1.6rem;
         color:rgb(231, 219, 219);
         text-transform:uppercase;
     }
     
+
+    
+    
+
 }
 
 
 
-@media screen and (max-width:350px){
+@media screen and (max-width:420px){
     .footerMedia{
         text-align:center;
         
@@ -748,11 +766,21 @@ input[type=submit]:hover{
         text-align:left;
         display:block;
     }
-    .flex-cont > form > input[type=radio]{
-    }
-
-    .flex-cont > form > label{
-        margin:0;
-    }
     
+    
+    .parallaxImg > h4{
+      
+        top:50%;
+        left:33%;
+        transform:tranlate(-50%,-50%);
+    }
+    .lt{
+        top:50%;
+        left:0.3%;
+    }
+    .rg{
+        
+        right:0.3%;
+        top:50%;
+    }
 }
